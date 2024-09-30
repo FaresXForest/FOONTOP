@@ -1,0 +1,126 @@
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TitleLabel = Instance.new("TextLabel")
+local SettingsButton = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.Position = UDim2.new(0.35, 0, 0.35, 0)
+MainFrame.Size = UDim2.new(0, 300, 0, 200)
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+TitleLabel.Parent = MainFrame
+TitleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleLabel.Size = UDim2.new(0, 300, 0, 50)
+TitleLabel.Font = Enum.Font.SourceSans
+TitleLabel.Text = "ك/س/م بسكوته ك/س/م XX_CRAZY"
+TitleLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TitleLabel.TextSize = 24
+
+SettingsButton.Name = "SettingsButton"
+SettingsButton.Parent = MainFrame
+SettingsButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+SettingsButton.Position = UDim2.new(0.25, 0, 0.4, 0)
+SettingsButton.Size = UDim2.new(0, 150, 0, 50)
+SettingsButton.Font = Enum.Font.SourceSans
+SettingsButton.Text = "Settings"
+SettingsButton.TextSize = 20
+
+SettingsButton.MouseButton1Click:Connect(function()
+    local SettingsFrame = Instance.new("Frame")
+    SettingsFrame.Parent = ScreenGui
+    SettingsFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    SettingsFrame.Position = UDim2.new(0.35, 0, 0.35, 0)
+    SettingsFrame.Size = UDim2.new(0, 300, 0, 400)
+    SettingsFrame.Active = true
+    SettingsFrame.Draggable = true
+
+    local RSLabel = Instance.new("TextLabel")
+    RSLabel.Parent = SettingsFrame
+    RSLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    RSLabel.Position = UDim2.new(0.05, 0, 0.05, 0)
+    RSLabel.Size = UDim2.new(0, 270, 0, 50)
+    RSLabel.Font = Enum.Font.SourceSans
+    RSLabel.Text = "ك/س/م RS هم و ليدرات"
+    RSLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    RSLabel.TextSize = 20
+
+    local AntilagButton = Instance.new("TextButton")
+    AntilagButton.Parent = SettingsFrame
+    AntilagButton.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+    AntilagButton.Position = UDim2.new(0.25, 0, 0.25, 0)
+    AntilagButton.Size = UDim2.new(0, 150, 0, 50)
+    AntilagButton.Font = Enum.Font.SourceSans
+    AntilagButton.Text = "Antilag"
+    AntilagButton.TextSize = 20
+    AntilagButton.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/DYdj2nD1"))()
+    end)
+
+    local FlyButton = Instance.new("TextButton")
+    FlyButton.Parent = SettingsFrame
+    FlyButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+    FlyButton.Position = UDim2.new(0.25, 0, 0.35, 0)
+    FlyButton.Size = UDim2.new(0, 150, 0, 50)
+    FlyButton.Font = Enum.Font.SourceSans
+    FlyButton.Text = "FLY"
+    FlyButton.TextSize = 20
+    FlyButton.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+    end)
+
+    local MM2Button = Instance.new("TextButton")
+    MM2Button.Parent = SettingsFrame
+    MM2Button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+    MM2Button.Position = UDim2.new(0.25, 0, 0.45, 0)
+    MM2Button.Size = UDim2.new(0, 150, 0, 50)
+    MM2Button.Font = Enum.Font.SourceSans
+    MM2Button.Text = "MM2"
+    MM2Button.TextSize = 20
+    MM2Button.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/PotatoesDev/Lunar/main/LunarXyz.lua'))()
+    end)
+
+    local MM2V2Button = Instance.new("TextButton")
+    MM2V2Button.Parent = SettingsFrame
+    MM2V2Button.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+    MM2V2Button.Position = UDim2.new(0.25, 0, 0.55, 0)
+    MM2V2Button.Size = UDim2.new(0, 150, 0, 50)
+    MM2V2Button.Font = Enum.Font.SourceSans
+    MM2V2Button.Text = "MM2 V2"
+    MM2V2Button.TextSize = 20
+    MM2V2Button.MouseButton1Click:Connect(function()
+        loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+    end)
+
+    local AntiAFKButton = Instance.new("TextButton")
+    AntiAFKButton.Parent = SettingsFrame
+    AntiAFKButton.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
+    AntiAFKButton.Position = UDim2.new(0.25, 0, 0.65, 0)
+    AntiAFKButton.Size = UDim2.new(0, 150, 0, 50)
+    AntiAFKButton.Font = Enum.Font.SourceSans
+    AntiAFKButton.Text = "ANTIAFK V2"
+    AntiAFKButton.TextSize = 20
+    AntiAFKButton.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Anti-Afk-Remastered-Script-or-Diffrent-Cool-UI-2097"))()
+    end)
+
+    local BackButton = Instance.new("TextButton")
+    BackButton.Parent = SettingsFrame
+    BackButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    BackButton.Position = UDim2.new(0.25, 0, 0.85, 0)
+    BackButton.Size = UDim2.new(0, 150, 0, 50)
+    BackButton.Font = Enum.Font.SourceSans
+    BackButton.Text = "رجوع"
+    BackButton.TextSize = 20
+    BackButton.MouseButton1Click:Connect(function()
+        SettingsFrame:Destroy()
+    end)
+end)
+
+local UIS = game:GetService("UserInputService")
+if UIS.TouchEnabled then
+    print("تحكم اللمس مفعل")
+end
